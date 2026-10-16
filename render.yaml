@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: track-meal-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: SMTP_USER
+        value: mdjamanmolla44@gmail.com
+      - key: SMTP_PASS
+        value: rsfdljqslmkcbnfg
